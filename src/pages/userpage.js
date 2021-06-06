@@ -1,34 +1,35 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import style from '../css/userpage.module.css';
 
 export class user extends Component {
     render() {
         return (
-            <div className="user-page">
+            <div className={style.userPage}>
                 {/* user page header */}
                 <div className="header">
-                    <div className="user-picture">
-                        <img src="" />
+                    <div className={style.userPicture}>
+                        <img src="" alt="user"/>
                     </div>
-                    <div className="user-text">
-                        <h1 className="user-real-name">
+                    <div className={style.userText}>
+                        <h1 className={style.userFullName}>
                             Ben Buckley
                         </h1>
-                        <h3 className="user-profile-name">
+                        <h3 className={style.userProfileName}>
                             @TLClassless
                         </h3>
-                        <p className="user-bio">
+                        <p className={style.userBio}>
                             This is a sample bio for a user, the bio can be up to two lines long.
                         </p>
                     </div>
                 </div>
 
                 {/* user page links */}
-                <div className="user-links">
-                    <div className="user-link">
-                        <div className="user-link-favicon">
+                <div className={style.userLinks}>
+                    <div className={style.userLink}>
+                        <div className={style.userLinkFavicon}>
 
                         </div>
-                        <div className="user-link-text">
+                        <div className={style.userLinkText}>
                             <h1>
                                 Facebook Link
                             </h1>
@@ -40,7 +41,7 @@ export class user extends Component {
                 </div>
 
                 {/* user page footer */}
-                <div className="user-footer">
+                <div className={style.userFooter}>
                     <h1>🔗 CHAINLI.NK</h1>
                 </div>
             </div>
