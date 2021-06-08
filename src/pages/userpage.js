@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
 import style from '../css/userpage.module.css';
+import defaultUserPhoto from '../img/portrait-1.jpg';
+
+let userName = "Username";
+let userFullName = "User Fullname";
 
 export class user extends Component {
     render() {
         return (
             <div className={style.userPage}>
                 {/* user page header */}
-                <div className="header">
-                    <div className={style.userPicture}>
-                        <img src="" alt="user"/>
-                    </div>
+                <div className={style.header}>
+                    <img className={style.userPicture} src={defaultUserPhoto} alt="User"/>
                     <div className={style.userText}>
                         <h1 className={style.userFullName}>
-                            Ben Buckley
+                            {userFullName}
                         </h1>
                         <h3 className={style.userProfileName}>
-                            @TLClassless
+                            @{userName}
                         </h3>
                         <p className={style.userBio}>
                             This is a sample bio for a user, the bio can be up to two lines long.
@@ -26,9 +28,7 @@ export class user extends Component {
                 {/* user page links */}
                 <div className={style.userLinks}>
                     <div className={style.userLink}>
-                        <div className={style.userLinkFavicon}>
-
-                        </div>
+                        <img className={style.userFavicon} src={defaultUserPhoto} alt="User"/>
                         <div className={style.userLinkText}>
                             <h1>
                                 Facebook Link
@@ -41,9 +41,7 @@ export class user extends Component {
                 </div>
 
                 {/* user page footer */}
-                <div className={style.userFooter}>
-                    <h1>🔗 CHAINLI.NK</h1>
-                </div>
+                <h1 className={style.userFooter}>🔗 CHAINLI.NK</h1>
             </div>
         )
     }
