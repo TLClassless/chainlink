@@ -4,6 +4,8 @@ import defaultUserPhoto from '../img/portrait-1.jpg';
 
 let userName = "Username";
 let userFullName = "User Fullname";
+let userPhoto = defaultUserPhoto;
+let userBio = "This is a sample bio for a user, the bio can be up to two lines long.";
 
 export class user extends Component {
     render() {
@@ -11,7 +13,7 @@ export class user extends Component {
             <div className={style.userPage}>
                 {/* user page header */}
                 <div className={style.header}>
-                    <img className={style.userPicture} src={defaultUserPhoto} alt="User"/>
+                    <img className={style.userPicture} src={userPhoto} alt="User"/>
                     <div className={style.userText}>
                         <h1 className={style.userFullName}>
                             {userFullName}
@@ -20,7 +22,7 @@ export class user extends Component {
                             @{userName}
                         </h3>
                         <p className={style.userBio}>
-                            This is a sample bio for a user, the bio can be up to two lines long.
+                            {userBio}
                         </p>
                     </div>
                 </div>

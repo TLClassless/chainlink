@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "TLClassless",
+            "userFullname": "Ben Buckley",
+            "userBio": "This is a sample bio for a user, the bio can be up to two lines long.",
+            "userPhoto": "../img/portrait-1.jpg",
+            "userLinks": [ {
+                "id": 1,
+                "linkFavicon": "../img/favicon-sample.jpg",
+                "linkName": "Facebook",
+                "linkUrl": "https://facebook.com/mark/"
+            }
+            ]
+        }
+    ]
+}

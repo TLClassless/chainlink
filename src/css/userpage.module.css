@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: row;
     margin: 1rem 1rem 0 1rem;
+    align-self: center;
 }
 
 .userPage {
@@ -16,6 +17,7 @@
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
+    margin-right: 0.5rem;
 }
 
 .userText {
@@ -30,8 +32,9 @@
 }
 
 .userText h1 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 800;
+    font-style: italic;
 }
 
 .userText h3 {
@@ -60,6 +63,9 @@
     margin: 1rem;
     padding: 1rem;
     border-radius: 8px;
+    max-width: 38rem;
+    width: 100%;
+    align-self: center;
 }
 
 .userFavicon {
@@ -81,6 +87,7 @@
 
 .userLinkText h3 {
     font-size: 0.8rem;
+    font-weight: 300;
 }
 
 /* user footer */
@@ -91,7 +98,10 @@
     justify-content: center;
     position: absolute;
     font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
     bottom: 0;
     margin: 0;
     padding: 0;
+    margin-bottom: 0.5rem;
 }
