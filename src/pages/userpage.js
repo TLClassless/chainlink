@@ -2,10 +2,14 @@ import React, { Component } from 'react';
 import style from '../css/userpage.module.css';
 import defaultUserPhoto from '../img/portrait-1.jpg';
 
-let userName = "Username";
-let userFullName = "User Fullname";
+// test api:
+let data = require('../api/sample.json');
+console.log(data);
+
+let userName = data.users[0].username;
+let userFullName = data.users[0].userFullname;
 let userPhoto = defaultUserPhoto;
-let userBio = "This is a sample bio for a user, the bio can be up to two lines long.";
+let userBio = data.users[0].userBio;
 
 export class user extends Component {
     render() {
