@@ -4,7 +4,7 @@ import defaultUserPhoto from "../img/portrait-1.jpg";
 import UserLinks from "./components/userLinks.js";
 
 // test api:
-let data = require("../api/sample.json");
+export let data = require("../api/sample.json");
 console.log(data);
 
 let userName = data.users[0].username;
