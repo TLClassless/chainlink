@@ -13,6 +13,14 @@ let userPhoto = defaultUserPhoto;
 let userBio = data.users[0].userBio;
 
 export class user extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          linkName: data.users[0].userLinks[0].linkName,
+          linkUrl: data.users[0].userLinks[0].linkUrl
+        };
+        console.log(this.state.linkName);
+      }
   render() {
     return (
       <div className={style.userPage}>
@@ -27,7 +35,10 @@ export class user extends Component {
         </div>
 
         {/* user page links */}
-        <UserLinks />
+        <UserLinks 
+            linkName={this.state.linkName}
+            linkUrl={this.state.linkUrl}
+        />
 
         {/* user page footer */}
         <h1 className={style.userFooter}>🔗 CHAINLI.NK</h1>
