@@ -5,21 +5,21 @@ import UserLinks from "./components/userLinks.js";
 
 // test api:
 export let data = require("../api/sample.json");
-console.log(data);
 
-let userName = data.users[0].username;
-let userFullName = data.users[0].userFullname;
+let currentUser = data.users[0];
+let userName = currentUser.username;
+let userFullName = currentUser.userFullname;
 let userPhoto = defaultUserPhoto;
-let userBio = data.users[0].userBio;
+let userBio = currentUser.userBio;
+
+console.log(currentUser);
 
 export class user extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          linkName: data.users[0].userLinks[0].linkName,
-          linkUrl: data.users[0].userLinks[0].linkUrl
+            links: data.users[0].userLinks
         };
-        console.log(this.state.linkName);
       }
   render() {
     return (
@@ -35,9 +35,11 @@ export class user extends Component {
         </div>
 
         {/* user page links */}
+        {this.state.links.forEach(userLinks => console.log(userLinks))}
+        
         <UserLinks 
-            linkName={this.state.linkName}
-            linkUrl={this.state.linkUrl}
+            linkName={this.state.links[0].linkName}
+            linkUrl={this.state.links[0].linkUrl}
         />
 
         {/* user page footer */}
