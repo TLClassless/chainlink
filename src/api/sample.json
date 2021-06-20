@@ -1,23 +1,23 @@
 {
     "users": [
         {
-            "id": 0,
+            "key": 0,
             "username": "TLClassless",
             "userFullname": "Ben Buckley",
             "userBio": "This is a sample bio for a user, the bio can be up to two lines long.",
             "userPhoto": "../img/portrait-1.jpg",
             "userLinks": [ {
-                "id": 0,
+                "key": 0,
                 "linkName": "Twitch",
                 "linkUrl": "https://twitch.tv/tlclassless/"
             },
             {
-                "id": 1,
+                "key": 1,
                 "linkName": "Twitter",
                 "linkUrl": "https://twitter.com/tlclassless/"
             },
             {
-                "id": 2,
+                "key": 2,
                 "linkName": "GitHub",
                 "linkUrl": "https://github.com/tlclassless/"
             }

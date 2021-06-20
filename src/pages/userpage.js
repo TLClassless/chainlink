@@ -22,6 +22,8 @@ export class user extends Component {
         };
       }
   render() {
+
+    let links = this.state.links;
     return (
       <div className={style.userPage}>
         {/* user page header */}
@@ -33,14 +35,14 @@ export class user extends Component {
             <p className={style.userBio}>{userBio}</p>
           </div>
         </div>
-
-        {/* user page links */}
-        {this.state.links.forEach(userLinks => console.log(userLinks))}
         
-        <UserLinks 
-            linkName={this.state.links[0].linkName}
-            linkUrl={this.state.links[0].linkUrl}
-        />
+        {links.map(({linkName, linkUrl, key}) => {
+          return <UserLinks 
+            key={key}
+            linkName={linkName}
+            linkUrl={linkUrl}
+          />
+        })}
 
         {/* user page footer */}
         <h1 className={style.userFooter}>🔗 CHAINLI.NK</h1>
