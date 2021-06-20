@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import style from "../../css/userpage.module.css";
-// import defaultUserPhoto from "../../img/portrait-1.jpg";
 
 export class userLinks extends Component {
   constructor(props) {

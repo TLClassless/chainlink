@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import style from "../css/userpage.module.css";
 import defaultUserPhoto from "../img/portrait-1.jpg";
 import UserLinks from "./components/userLinks.js";
+import Footer from "./components/footer.js";
 
 // test api:
 export let data = require("../api/sample.json");
@@ -45,7 +46,7 @@ export class user extends Component {
         })}
 
         {/* user page footer */}
-        <h1 className={style.userFooter}>🔗 CHAINLI.NK</h1>
+        <Footer />
       </div>
     );
   }

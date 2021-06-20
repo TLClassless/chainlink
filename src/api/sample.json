@@ -5,7 +5,7 @@
             "username": "TLClassless",
             "userFullname": "Ben Buckley",
             "userBio": "This is a sample bio for a user, the bio can be up to two lines long.",
-            "userPhoto": "../img/portrait-1.jpg",
+            "userPhoto": "",
             "userLinks": [ {
                 "key": 0,
                 "linkName": "Twitch",
@@ -20,6 +20,11 @@
                 "key": 2,
                 "linkName": "GitHub",
                 "linkUrl": "https://github.com/tlclassless/"
+            },
+            {
+                "key": 3,
+                "linkName": "Website",
+                "linkUrl": "https://humanthat.codes/"
             }
             ]
         }

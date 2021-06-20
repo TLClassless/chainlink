@@ -1,5 +1,9 @@
 /* header */
 
+body {
+    min-width: 320px;
+}
+
 a {
     color: #000;
     text-decoration: none; 
@@ -11,6 +15,7 @@ a {
     margin: 1rem 1rem 0 1rem;
     align-self: center;
     max-width: 38rem;
+    margin-bottom: 1rem;
 }
 
 .userPage {
@@ -67,11 +72,11 @@ a {
     display: flex;
     flex-direction: row;
     background-color: #e7e7e7;
-    margin: 1rem;
+    margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 8px;
     max-width: 38rem;
-    width: 100%;
+    width: 85%;
     align-self: center;
 }
 
@@ -96,18 +101,23 @@ a {
     font-weight: 300;
 }
 
-/* user footer */
-
 .userFooter {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    position: absolute;
-    font-size: 1rem;
-    font-weight: 400;
-    font-style: italic;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 0.5rem;
+    display: none;
 }
+
+/* user footer */
+@media only screen and (min-height: 400px) {
+    .userFooter {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        font-size: 0.8rem;
+        font-weight: 600;
+        font-style: italic;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0.5rem;
+    }
+  }
