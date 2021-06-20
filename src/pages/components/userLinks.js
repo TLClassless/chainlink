@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import style from "../../css/userpage.module.css";
-import defaultUserPhoto from "../../img/portrait-1.jpg";
+// import defaultUserPhoto from "../../img/portrait-1.jpg";
 
 export class userLinks extends Component {
   constructor(props) {
@@ -19,17 +19,17 @@ export class userLinks extends Component {
 
     return (
       <div className={style.userLinks}>
-        <div className={style.userLink}>
+        <a className={style.userLink} href={linkUrl}>
           <img
             className={style.userFavicon}
-            src={defaultUserPhoto}
+            src={"https://www.google.com/s2/favicons?sz=64&domain_url=" + linkUrl}
             alt="User"
           />
           <div className={style.userLinkText}>
             <h1>{linkName}</h1>
             <h3>{linkUrl}</h3>
           </div>
-        </div>
+        </a>
       </div>
       );
   }
