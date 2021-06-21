@@ -7,6 +7,7 @@ import Footer from "./components/footer.js";
 // test api:
 export let data = require("../api/sample.json");
 
+// data handling: 
 let currentUser = data.users[0];
 let userName = currentUser.username;
 let userFullName = currentUser.userFullname;
@@ -16,15 +17,17 @@ let userBio = currentUser.userBio;
 console.log(currentUser);
 
 export class user extends Component {
+
     constructor(props) {
         super(props);
-        this.state = {
-            links: data.users[0].userLinks
+        this.state = { 
+            links: data.users[0].userLinks,
         };
       }
-  render() {
 
+  render() {
     let links = this.state.links;
+
     return (
       <div className={style.userPage}>
         {/* user page header */}

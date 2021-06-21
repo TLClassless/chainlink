@@ -23,8 +23,13 @@
             },
             {
                 "key": 3,
-                "linkName": "Website",
-                "linkUrl": "https://humanthat.codes/"
+                "linkName": "Dribbble",
+                "linkUrl": "https://dribbble.com/tlclassless/"
+            },
+            {
+                "key": 4,
+                "linkName": "LinkedIn",
+                "linkUrl": "https://www.linkedin.com/in/ben-buckley-7502ba140/"
             }
             ]
         }
