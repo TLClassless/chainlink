@@ -16,7 +16,6 @@ a {
     align-self: center;
     max-width: 40rem;
     width: 85%;
-    margin-bottom: 1rem;
 }
 
 .userPage {
@@ -61,6 +60,16 @@ a {
     font-size: 0.8rem;
 }
 
+.line {
+    width: 2rem;
+    height: 0.2rem;
+    background-color: #646464;
+    color: #646464;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 1rem;
+}
+
 /* user links */
 
 .userLinks {
@@ -101,6 +110,7 @@ a {
 .userLinkText h3 {
     font-size: 0.8rem;
     font-weight: 300;
+    color: #646464;
 }
 
 .userFooter {

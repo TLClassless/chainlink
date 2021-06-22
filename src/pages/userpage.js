@@ -39,6 +39,8 @@ export class user extends Component {
             <p className={style.userBio}>{userBio}</p>
           </div>
         </div>
+
+        <hr className={style.line} />
         
         {links.map(({linkName, linkUrl, key}) => {
           return <UserLinks 
