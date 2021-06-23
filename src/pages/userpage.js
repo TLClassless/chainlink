@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from 'react-helmet';
 import style from "../css/userpage.module.css";
 import defaultUserPhoto from "../img/portrait-1.jpg";
 import UserLinks from "./components/userLinks.js";
@@ -30,6 +31,11 @@ export class user extends Component {
 
     return (
       <div className={style.userPage}>
+        {/* Set page title based on user */}
+        <Helmet>
+          <title>{userFullName} (@{userName}) | Chainlink</title>
+        </Helmet>
+
         {/* user page header */}
         <div className={style.header}>
           <img className={style.userPicture} src={userPhoto} alt="User" />
