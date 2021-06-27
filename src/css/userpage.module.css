@@ -147,7 +147,7 @@ a {
       align-items: center;
       top: 0;
       height: 2rem;
-      max-width: 40rem;
+      max-width: 60rem;
       width: 100%;
   }
 
@@ -155,4 +155,15 @@ a {
       width: 100%;
       display: flex;
       justify-content: space-between;
+  }
+
+  @media only screen and (min-height: 400px) {
+    .headerContainer {
+        margin-right: 0.5rem;
+        position: absolute;
+    }
+
+    .header {
+        margin-top: 0 1rem 0 1rem;
+    }
   }

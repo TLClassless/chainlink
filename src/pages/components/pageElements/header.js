@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import style from '../../css/userpage.module.css';
+import style from '../../../css/userpage.module.css';
 import { HiDotsCircleHorizontal } from "react-icons/hi";
 
 export class header extends Component {
