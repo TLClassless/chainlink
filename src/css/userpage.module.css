@@ -99,6 +99,10 @@ a {
     align-self: center;
 }
 
+.userLinkText {
+    width: 84%;
+}
+
 .userLinkText h1, h3 {
     margin: 0;
 }
@@ -111,6 +115,9 @@ a {
     font-size: 0.8rem;
     font-weight: 300;
     color: #646464;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .userFooter {
