@@ -5,7 +5,7 @@ export class footer extends Component {
     render() {
         return (
             <div>
-                <h1 className={style.userFooter}>Quippy Tagline. 🔗</h1>
+                <h1 className={style.userFooter}>Chain.link is pretty cool 🔗</h1>
             </div>
         )
     }
